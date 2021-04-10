@@ -1,0 +1,110 @@
+body {
+  background-color: black;
+  font: 19px jolly lodger;
+  box-sizing: border-box;
+  overflow: auto;
+  width: 100%;
+  
+}
+#main {
+  background-color: #852828;
+  height: 100%;
+  width: 100%;
+  margin: 20px;
+  padding: 50px;  
+  border-image-slice: 157 157 157 157;
+  border-image-width: 42px 42px 42px 42px;
+  border-image-outset: 0px 0px 0px 0px;
+  border-image-repeat: round round;
+  border-image-source: url("https://i.pinimg.com/originals/32/09/8c/32098cd7a516fa676f24776830cb16f2.jpg"); 
+ }
+hgroup {
+  text-align: center;
+}
+#h1-div {
+  margin: 40px auto 60px;
+  width: 50%;
+  height: auto;
+  box-shadow: 8px 5px 30px 10px pink;
+  border-radius: 20px;
+  padding: 2px;
+  border: 5px double rgb(20, 20, 20);
+}
+h1 {
+  color: pink;
+  font: 30px New Rocker;
+  width: 100%;
+  padding: 2px;
+  }
+h2 {
+  margin: 40px auto;
+  color: white;
+  font-size: 25px;
+  width: 50%;   
+  }
+#img-div {
+  margin: auto;
+  padding: 0px 0px 5px 0px;
+  background: white;
+  width: 80%;
+  border-radius: 10px;
+  border: 7px double black;
+}
+#image {
+  display: block;
+  height: auto;
+  margin: auto;
+  max-width: 100%;
+}
+figcaption {
+  text-align: center;
+  padding: 5px; 
+  font: 20px covered by your grace;
+  }
+#tribute-info {
+  background-color: rgb(240, 192, 191);
+  width: 80%;
+  margin: 25px auto;
+  border-radius: 20px;
+  line-height: 25px;
+  padding: 10px 30px 20px;
+  border: 6px double black;
+        }
+h3 {
+  font: bold 22px covered by your grace;
+  text-decoration: double underline;
+  text-indent: 10px;
+}
+ul {
+  list-style: none;
+}
+ li {
+ margin-bottom: 15px;
+}    
+/*ul li::before {
+  content: "\2022";
+  color: white;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}*/
+p {
+  margin-top: 40px;
+  font: small-caps bold 19px covered by your grace;
+}
+  a {
+    all: unset;
+    color: darkred;
+    text-decoration: underline double;
+   cursor: pointer; 
+  }
+a:visited {
+ color: #852828;
+}
+.cross {
+  width: 15px;
+  height: 20px;
+  margin-right: 10px;
+  background-image: URL("https://www.bing.com/images/blob?bcid=ROnjoEGUBXEBNGeGWQBpTluPRXrb.....6k");
+  }

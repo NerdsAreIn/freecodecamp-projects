@@ -1,0 +1,96 @@
+<!DOCTYPE html><html lang="en-gb">
+  <head>
+<link rel="stylesheet" type="text/css" href="survey.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Anna Parker">
+    <title>Buffy fan survey</title>      
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </head>    
+  <body>
+    <div id="invis-container">
+      <div id="background"></div>
+      <div id="intro">
+        <h1 id="title">Buffy the Vampire Slayer - Fan Survey</h1>
+        <p id="description">A fun survey for fans</p>
+      </div>
+      <div id="form-box">
+        <form id="survey-form" action="#">
+          <fieldset name="participant-info">
+            <legend>About You</legend>
+            <label for="name" id="name-label">Name*</label>
+            <input type="text" placeholder="Write your name..." id="name"class="fields" value="" name="name" required  autocomplete size="30"><br>
+            <label for="email" id="email-label">Email*</label>
+            <input type="email" placeholder="Write your email address..." id="email" required class="fields" value="" name="email" size="30"><br>
+          </fieldset>  
+          <fieldset name="Buffy-qs">
+            <legend id="legend-2">About Buffy</legend>
+            <label for="number" id="number-label">Your favourite season:</label>
+            <input type="number" min="1" max="7" step="1" id="number" class="fields" value="" name="fave-season" placeholder="Type or use arrows to enter season number"><br>
+            <label id="radio-label">Is Buffy your favourite TV show?<br>
+              <div id="radio-div">
+                <input type="radio" class="fields" class="options" name="options" value="Yes">Yes</input>
+                <input type="radio" class="fields" class="options" name="options" value="No">No</input>
+              </div>
+            </label><br>
+            <label >If "No", please write your favourite show in the box:
+              <input type="text" class="fields" id="other-show">
+            </label><br>
+            <label for="dropdown">Who is your favourite character?</label><br>
+            <select id="dropdown" name="characters" class="fields" size="3">
+              <option class="character" name="character" value="Buffy">Buffy</option>
+              <option class="character" name="character" value="Xander">Xander</option>
+              <option class="character" name="character" value="Willow">Willow</option>
+              <option class="character" name="character" value="Giles">Giles</option>
+              <option class="character" name="character" value="Cordelia">Cordelia</option>
+              <option class="character" name="character" value="Angel">Angel</option>
+              <option class="character" name="character" value="Oz">Oz</option>
+              <option class="character" name="character" value= "Spike">Spike</option>
+              <option class="character" name="character" value="Riley">Riley</option>
+              <option class="character" name="character" value="Dawn">Dawn</option>
+              <option class="character " name="character" value="Anya">Anya</option>
+              <option class="character" name="character" value="Tara">Tara</option>
+              <option class="character" name="character" value="Other"> Other</option>
+           </select><br>
+           <label>If "Other", enter character name in the box:<input type="text" class="fields"></label>
+           <fieldset id="checkbox-list">
+             <p id="checkbox-q">What do you like best about Buffy? <small>(Choose one or more from the following.)</small></p>
+             <label for="checkbox1">Humour</label>
+             <input type="checkbox" id="checkbox1" name="buffy-best" value="humour" class="fields"><br>
+             <label>Characters<input type="checkbox" name="buffy-best" value="characters" class="fields"></label><br>
+             <label>Storytelling<input type="checkbox" name="buffy-best" value="storytelling" class="fields"></label><br>
+             <label>Music<input type="checkbox" name="buffy-best" value="music"class="fields"></label><br>
+             <label>Fight Scenes<input type="checkbox" name="buffy-best" value="fight scenes"class="fields"></label><br>
+             <label>Fashion<input type="checkbox" name="buffy-best" value="fashion"class="fields"></label><br>
+             <label>Acting<input type="checkbox" name="buffy-best" value="acting"class="fields"></label><br>
+             <label>Special Effects<input type="checkbox" name="buffy-best" value="special effects"class="fields"></label><br>
+             <label>Writing<input type="checkbox" name="buffy-best" value="writing" id="writing" class="fields"></label><br>
+             <div id="range-box">
+               <label for="scale" id="scale-label">Rate Buffy on a scale of 1-10:</label><br>
+               <input type="range" list="numbers" id="scale" min="0" max="10" class="fields" name="range" value="">
+               <datalist id="numbers">
+                 <option value="0" label="0"></option>
+                 <option value="1"></option>
+                 <option value="2"></option>
+                 <option value="3"></option>
+                 <option value="4"></option>
+                 <option value="5" label="5"></option>
+                 <option value="6"></option>
+                 <option value="7"></option>
+                 <option value="8"></option>
+                 <option value="9"></option>
+                 <option value="10" label="10"></option>
+               </datalist></div>  
+           </fieldset>
+           <label for="comments">Please write any comments or feedback in the box below (optional):</label><br> 
+           <textarea id="comments" rows="5" class="fields" name="comments" value="" maxlength="200"></textarea><br>
+           <label for="contactable">Check the box if you are happy to be contacted for further information</label> 
+           <input type="checkbox" name="contactable" value="yes" id="contactable" class="fields">
+          </fieldset>
+          <input type="submit" id="submit" value="Submit">
+          <p id="required">* These fields are required.</p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>  

@@ -1,0 +1,122 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: darkred;
+  color: white; 
+  box-sizing: border-box;
+  font-size: 15px;
+  text-align: center;
+  }
+#background {
+  background: URL("https://pbs.twimg.com/media/ECyYP7OU8AAkOn6?format=jpg&name=large") no-repeat fixed;   
+  opacity: 0.3;
+  background-size: cover;
+  height: 100%;
+     }
+#invis-container {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  position: relative;
+  }
+h1{
+  font-size: 1.5rem;
+  padding: 0px 0px 10px 0px;
+}
+@media only screen and (max-width: 700px) {
+   h1 {
+  font-size: 0.9rem;
+     }
+  #description {
+    font-size: 0.6rem;
+  }
+  #form-box {
+    height: 60%;
+  }
+}
+@media only screen and (min-width: 700px) {
+  h1 {
+    font-size: 1.1rem;
+}
+#description {
+  font-size: 0.8rem;
+}
+  #form-box {
+    height: 65%;
+  }  
+}
+#intro {
+  height: 10%;
+  width:  50%;  
+  position: absolute;
+  top: 0;
+  left: 25%;
+  padding: 0px;
+  }
+.fields {
+  margin: 15px 0px  30px 5px;
+  color: rgb(55, 8, 32);
+}
+#form-box { 
+  padding: 15px;
+  background-color: hsla(350, 100%, 88%, 0.8);
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+  color: maroon; 
+  overflow: auto;
+  }
+fieldset {
+  all: inherit;
+  margin-bottom: 20px;
+  }
+legend {
+  all: unset;
+  padding-bottom: 1px;
+  border-bottom: 2px solid white;
+  margin-bottom: 10px;
+  text-align: center;
+}
+#number {
+  width: 320px;
+}
+#radio-div {
+  border: 1px solid rgb(59, 10, 30);
+  display: inline-block;
+  width: 100px;
+  padding: 0;
+  margin: 10px auto 20px;
+  }
+ input:checked  {
+  box-shadow: 0 0 0 3px red;
+   }
+select option:hover {
+  background-color: rgba(220,120,180, 0.8);
+}
+ option:not(:checked) {
+  color: inherit;
+  background-color: #b4a0b5;
+    }
+select {
+  width: 100px;
+}
+input[type=checkbox] {
+  margin-bottom: 10px;
+}
+#required{
+  font-size: 0.8rem;
+  text-align: initial;
+}
+textarea {
+  width: 80%;
+  resize: initial;
+  }
+input[type^=submit] {
+  color: white;
+  background-color: maroon;
+  border-radius: 50px;
+}
+#range-box {
+  margin: 40px 0px 25px;  
+}
